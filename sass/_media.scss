@@ -1,0 +1,210 @@
+@media (max-width: 600px){
+    .header{
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 0;
+        height: 15rem;
+
+        .user-nav{
+            align-self: stretch;
+
+            & > * {
+                padding: 0 1.2rem;
+            }
+        }
+
+        .search {
+            // margin-top: 2rem;
+            border-top: 1px dotted #ccc;
+            padding: 2rem 1rem;
+            order: 1;
+            grid-column: 1/-1;
+            // align-self: center;
+            
+        }
+    }
+    
+    .sidebar{
+        ul{
+            li{
+                a{
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                   font-size: 1.2rem;
+                   padding: 1rem;
+
+                   &#car{
+                       font-size: 1rem;
+                   }
+
+                   svg{
+                       width: 100%;
+                       margin: 0 auto;
+                       margin-bottom: 1rem;
+                   }
+                }
+            }
+        }
+    }
+
+    .main-contain{
+        .overview {
+    
+            &-heading {
+                font-size: 1.4rem;
+            }
+
+            &-stars {
+                display: none;
+    
+            }
+
+            &-rating {
+                margin-left: auto;
+                &-count {
+                    font-size: .6rem;
+    
+                }
+            }
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 5rem;
+            grid-column-gap: 0;
+
+            .user-reviews {
+
+                .review {
+                    margin-bottom: 0;
+                }
+
+                .btn-cont {
+                    margin-top: 2rem;
+                }
+            }
+
+            .description {
+                .recommend {
+                    &-people {
+    
+                        img:not(:last-child) {
+                                margin-right: -17px;
+                            }
+                    }
+                }
+                ul{
+                    grid-template-columns: 1fr;
+                }
+            }
+
+        }
+
+
+    } 
+
+
+}
+
+@media (min-width: 601px) and(max-width: 900px){
+
+    .header{
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 0;
+        height: 15rem;
+
+        .user-nav{
+            align-self: stretch;
+        }
+
+        .search {
+            // margin-top: 2rem;
+            border-top: 1px dotted #ccc;
+            padding: 2rem 1rem;
+            order: 1;
+            grid-column: 1/-1;
+            // align-self: center;
+            
+        }
+    }
+    
+    .sidebar{
+        ul{
+            li{
+                a{
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                   font-size: 1.6rem;
+                   svg{
+                       width: 100%;
+                       margin: 0 auto;
+                       margin-bottom: 1rem;
+                   }
+                }
+            }
+        }
+    }
+
+    .main-contain{
+        .overview {
+    
+            &-heading {
+                font-size: 2rem;
+            }
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 5rem;
+
+            .user-reviews {
+
+                .review {
+                    margin-bottom: 0;
+                }
+
+                .btn-cont {margin-top: 2rem;
+                }
+            }
+
+        }
+    }   
+    
+}
+
+@media (min-width: 901px) and(max-width: 1200px){
+    
+    
+}
+
+@media (max-width: 1200px){
+    body{
+        line-height: 1.4;
+    }
+
+    .container {
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+
+    .legal{
+        display: none;
+    }
+
+    .sidebar{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+
+            li{
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}

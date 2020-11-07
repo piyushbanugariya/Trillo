@@ -1,0 +1,41 @@
+.container {
+    max-width: 120rem;
+    margin: 10rem auto;
+}
+
+.btn-inline {
+    border: none;
+    outline: none;
+    color: $color-primary;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: $color-dark-1; 
+        animation: pulsate 1s infinite;
+    }
+
+    // &:focus {
+       
+    // }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: $shadow-dark;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
